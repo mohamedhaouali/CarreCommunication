@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="fr"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>CARRecomm</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	
+	
+	<!-- CSS
+  ================================================== -->
+         {% block stylesheets %}
+        <link  href="{{asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet"/>
+	<link  href="{{asset('templates/css/base.css')}}" rel="stylesheet"/>
+        <link  href="{{asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet"/>
+	<link  href="{{asset('templates/css/base.css')}}" rel="stylesheet"/>
+	<link  href="{{asset('templates/css/skeleton.css')}}" rel="stylesheet" />
+	<link  href="{{asset('templates/css/layout.css')}}" rel="stylesheet" />
+	<link  href="{{asset('templates/css/font-awesome.css')}}" rel="stylesheet"/>
+	<link  href="{{asset('templates/css/retina.css')}}" rel="stylesheet" />
+	<link  href="{{asset('templates/css/animsition.min.css')}}" rel="stylesheet"/>
+	<link  href="{{asset('templates/css/slider.css')}}" rel="stylesheet"/>
+        <link href="{{ asset('templates/css/microcms.css') }}" rel="stylesheet">
+        {% endblock %}
+  
+     
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="{{asset('templates/shortcut icon')}}" href="favicon.png">
+	<link rel="{{asset('templates/apple-touch-icon')}}" href="apple-touch-icon.png">
+	<link rel="{{asset('templates/apple-touch-icon')}}" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="{{asset('templates/apple-touch-icon')}}" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="{{asset('templates/shortcut icon')}}" href="favicon.png">
+	
+	
+</head>
+{% block content %}
+<body>	
+       
+	<div class="animsition">
+	
+	<!-- MENU
+    ================================================== -->	
+
+		  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+                          
+			 <a class="nav navbar-nav navbar-left" href="#"><img src="{{asset('templates/images/lg.png')}}" alt="" width="60" height="60"  class="moimg"/><div class="moh1"></div></a>   
+                            
+                         
+                            
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                         
+                                                                    
+                                     
+                <ul class="nav navbar-nav">
+                                        
+                                        
+                                            
+						<li>
+							<a class="active-menu" href="{{path('index')}}">Acceuil</a>
+						
+						</li>
+                                                
+						<li>
+							<a href="{{path('about')}}"  class="animsition-link">A propos</a>
+                                                        
+                                                      
+						</li>
+                                                
+						<li>
+							<a href="{{path('portfolio')}}">Portfolio</a>
+						
+						</li>
+						
+                                                
+                                                <li>
+							<a href="{{path('article_index')}}">Blog</a>
+							
+						</li>
+                                                
+                                                
+						<li>
+							<a href="{{path('myapplication_contact')}}">Contact</a>
+							
+						</li>
+                                                
+                                                
+						
+					</ul>
+				</div>
+			</div>
+                          </nav>                              
+		</div>	
+		
+	<!-- Primary Page Layout
+	================================================== -->
+
+	{% block body %}{%endblock  %}
+
+
+
+
+
+
+	
+		
+	</div>	
+
+		
+	<!-- JAVASCRIPT
+    ================================================== -->
+   {% block javascripts %}       
+        
+<script type="text/javascript" src="{{asset('templates/js/jquery.js')}}"></script>	
+<script type="text/javascript" src="{{asset('templates/js/modernizr.custom.js')}}"></script> 
+<script type="text/javascript" src="{{asset('templates/js/jquery.animsition.min.js')}}"></script>
+<link rel="stylesheet"  href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}" />
+<script type="text/javascript">
+(function($) { "use strict";
+	$(document).ready(function() {
+	  
+	  $(".animsition").animsition({
+	  
+		inClass               :   'zoom-in-sm',
+		outClass              :   'zoom-out-sm',
+		inDuration            :    800,
+		outDuration           :    800,
+		linkElement           :   '.animsition-link', 
+		// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+		loading               :    true,
+		loadingParentElement  :   'body', //animsition wrapper element
+		loadingClass          :   'animsition-loading',
+		unSupportCss          : [ 'animation-duration',
+								  '-webkit-animation-duration',
+								  '-o-animation-duration'
+								],
+		//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
+		//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+		
+		overlay               :   false,
+		
+		overlayClass          :   'animsition-overlay-slide',
+		overlayParentElement  :   'body'
+	  });
+	});  
+})(jQuery);
+</script>
+<script type="text/javascript" src="{{asset('templates/js/jquery.easing.js')}}"></script>
+<script type="text/javascript" src="{{asset('templates/js/retina-1.1.0.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('templates/js/classie.js')}}"></script>
+<script type="text/javascript" src="{{asset('templates/js/cbpAnimatedHeader.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('templates/js/menu.js')}}"></script> 	
+<script type="text/javascript" src="{{asset('templates/js/scroll.js')}}"></script>	
+<script type="text/javascript" src="{{asset('templates/js/animated-headline.js')}}"></script>	
+<script type="text/javascript" src="{{asset('templates/js/jquery.fs.tipper.min.js')}}"></script>	
+<script type="text/javascript" src="{{asset('templates/js/jquery.simple-text-rotator.js')}}"></script>	
+<script type="text/javascript" src="{{asset('templates/js/custom-home4.js')}}"></script>
+<script type="text/javascript" src="{{asset('templates/js/custom-about.js')}}"></script>
+<script type="text/javascript" src="{{asset('templates/https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpnlHRidMIU374bKM5-sx8ruc01OvDjI')}}"></script>
+<script type="text/javascript" src="{{asset('templates/js/contact.js')}}"></script>
+<script type="text/javascript" src="{{asset('templates/js/custom-contact1.js')}}"></script>  
+<script type="text/javascript" src="{{asset('templates/js/imagesloaded.pkgd.min.js')}}"></script> 
+<script type="text/javascript" src="{{asset('templates/js/masonry.js')}}"></script> 
+<script type="text/javascript" src="{{asset('templates/js/isotope.js')}}"></script> 
+<script type="text/javascript" src="{{asset('templates/js/custom-work2.js')}}"></script>  
+<script type="text/javascript" src="{{asset('templates/js/client.js')}}"></script> 
+<script type="text/javascript" src="{{asset('templates/js/custom-work.js')}}"></script>
+<!-- End Document
+================================================== -->
+
+{% endblock %}
+</body>
+{%endblock content %}
+</html>

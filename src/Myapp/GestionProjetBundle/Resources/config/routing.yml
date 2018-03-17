@@ -1,0 +1,51 @@
+gestion_projet_article:
+    resource: "@GestionProjetBundle/Resources/config/routing/article.yml"
+    prefix:   /article
+
+gestion_projet_homepage:
+    path:     /
+    defaults: { _controller: GestionProjetBundle:Default:index }
+     
+layout:
+    path:     /layout
+    defaults: { _controller: GestionProjetBundle:Default:layout } 
+    
+index:
+    path:     /index
+    defaults: { _controller: GestionProjetBundle:Default:indextemplate }
+    
+about:
+    path:     /about
+    defaults: { _controller: GestionProjetBundle:Default:about} 
+    
+contact:
+    path:     /contact
+    defaults: { _controller: GestionProjetBundle:Default:contact}  
+    
+portfolio:
+    path:     /portfolio
+    defaults: { _controller: GestionProjetBundle:Default:portfolio}     
+
+myapplication_contact:
+    path:     /contact1
+    defaults: { _controller: GestionProjetBundle:Default:contac }  
+    
+blog:
+    path:     /blog
+    defaults: { _controller: GestionProjetBundle:Default:blog}  
+    
+portfolio1:
+    path:     /portfolio1
+    defaults: { _controller: GestionProjetBundle:Default:portfolio1}
+    
+Gallery:
+    path:     /gallery
+    defaults: { _controller: GestionProjetBundle:Gallery:gallery} 
+    
+Detail:
+    path:     /detail
+    defaults: { _controller: GestionProjetBundle:Detail:detail} 
+    
+Home:
+    path:     /home
+    defaults: { _controller: GestionProjetBundle:Home:home}     

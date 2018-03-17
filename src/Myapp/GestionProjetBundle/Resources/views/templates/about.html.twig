@@ -1,0 +1,387 @@
+{% extends '::base.html.twig'%}
+
+{% block body %}
+  <div class="container">
+      
+    
+				<div class="sixteen columns">
+					
+					<ul class="slimmenu">
+						<li>
+							<a href="#">homepages</a>
+							<ul class="submenu-back">
+								<li> 
+									<a href="index.html" class="animsition-link">background image</a>
+								</li>
+								<li>
+									<a href="index2.html" class="animsition-link">background slider</a>
+								</li>
+								<li>
+									<a href="index3.html" class="animsition-link">text slider</a>
+								</li>
+								<li>
+									<a href="index4.html" class="animsition-link">html5 video</a>
+								</li>
+								<li>
+									<a href="index5.html" class="animsition-link">youtube video</a>
+								</li>
+								<li>
+									<a href="index6.html" class="animsition-link">moving image</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="active-menu animsition-link" href="{{asset('templates/images/about.html')}}">about</a>
+						</li>
+						<li>
+							<a href="#">portfolio</a>
+							<ul class="submenu-back">
+								<li> 
+									<a href="work.html" class="animsition-link">Featured fourths</a>
+								</li>
+								<li>
+									<a href="work1.html" class="animsition-link">No Spaced fourths</a>
+								</li>
+								<li>
+									<a href="work2.html" class="animsition-link">Classic Grid</a>
+								</li>
+								<li>
+									<a href="work3.html" class="animsition-link">Two Halfs</a>
+								</li>
+								<li>
+									<a href="work4.html" class="animsition-link">Lightbox Gallery</a>
+								</li>
+							</ul>
+						</li>
+						<li> 
+							<a href="blog.html" class="animsition-link">jurnal</a>
+						</li>
+						<li>
+							<a href="#">hello</a>
+							<ul class="submenu-back">
+								<li> 
+									<a href="contact.html" class="animsition-link">default</a>
+								</li>
+								<li>
+									<a href="contact1.html" class="animsition-link">minimal</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="shortcodes.html" class="animsition-link">shortcodes</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<section class="cd-section">
+		<div class="cd-block">
+			<div class="about-top">
+			
+				<div class="big-text-pages-top">
+					<h1>Based in Serbia<span>.</span></h1>
+				</div>
+				
+				<div class="small-text">- we craft beautiful digital solutions -</div>
+				
+				<a href="#scroll-link" class="scroll scroll-down"></a>
+				
+			</div>
+		</div>
+	</section> <!-- .cd-section --> 
+
+	<section class="section white-background padding-top-bottom shadow-sec" id="scroll-link">
+		<div class="container">	
+			<div class="eight columns">	
+				<div class="section-big-header-text">	
+					<h2>Carre Communication <span>.</span></h2>	
+					<div class="line-big-header"></div>
+					<p>Passionné par l’art et l’image depuis ma tendre enfance, je me suis naturellement orienté vers des études en graphisme et design.
+                                        Après quelques expériences dans le monde de la création graphique et de la communication,
+J’ai fondé en 2010 l’agence Carré qui souffle cette année sa 7 eme bougie.
+Ayant pour slogan “think out of the box “,
+Carré s’est affirmée au fil des années comme une agence 360 qui n’a pas peur de sortir des sentiers battus en proposant à ses clients des solutions adaptées à leurs besoins.
+Je tiens à remercier tous ceux et celles qui, de près ou de loin, ont contribué au succès et au développement de Carré qui ambitionne de devenir parmi les leaders dans le secteur de la
+communication.<br/>
+
+Maher Ghanmi
+</p> 
+				</div>		
+			</div>		
+					
+		</div>
+	</section>
+
+	<section class="section white-background padding-bottom hidden-sec">
+		<div class="container">	
+				<div class="four columns">	
+					<div class="team-wrap">	
+						<img src="{{asset('templates/images/team1.jpg')}}" alt="">
+						<div class="mask-team">
+							<h6>Maher Ghanmi</h6>
+							<p><span>founder</span></p>
+							<ul class="skills-list">
+								<li>
+									<p><span>&#xf1db;</span>Branding and Identity</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Interaction Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Product Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Website Design</p>
+								</li>
+							</ul>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-soc-team">
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="four columns">	
+					<div class="team-wrap">
+						<img src="{{asset('templates/images/team2.jpg')}}" alt="">	
+						<div class="mask-team">
+							<h6> Safoine jebali</h6>
+							<p><span>development</span></p>
+							<ul class="skills-list">
+								<li>
+									<p><span>&#xf1db;</span>Agile Development</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Website Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Mobile UI Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Branding and Identity</p>
+								</li>
+							</ul>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-soc-team">
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+				</div>	
+				<div class="four columns">	
+					<div class="team-wrap">	
+						<img src="{{asset('templates/images/team3.jpg')}}" alt="">
+						<div class="mask-team">
+							<h6>ikbel yagoubi</h6>
+							<p><span>art director</span></p>
+							<ul class="skills-list">
+								<li>
+									<p><span>&#xf1db;</span>Branding and Identity</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Interaction Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Product Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Website Design</p>
+								</li>
+							</ul>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-soc-team">
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="four columns">	
+					<div class="team-wrap">
+						<img src="{{asset('templates/images/team4.jpg')}}" alt="">	
+						<div class="mask-team">
+							<h6>Mohamed kharbech</h6>
+							<p><span>development</span></p>
+							<ul class="skills-list">
+								<li>
+									<p><span>&#xf1db;</span>Agile Development</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Website Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Branding and Identity</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Mobile UI Design</p>
+								</li>
+							</ul>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-soc-team">
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+				</div>
+                                                
+                                                
+                               <div class="four columns">	
+					<div class="team-wrap">
+						<img src="{{asset('templates/images/team4.jpg')}}" alt="">	
+						<div class="mask-team">
+							<h6>Mohamed Haouali</h6>
+							<p><span>development</span></p>
+							<ul class="skills-list">
+								<li>
+									<p><span>&#xf1db;</span>Agile Development</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Website Design</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Branding and Identity</p>
+								</li>
+								<li>
+									<p><span>&#xf1db;</span>Mobile UI Design</p>
+								</li>
+							</ul>
+							<div class="social-team">
+								<ul class="list-social-team">
+									<li class="icon-soc-team">
+										<a href="#">&#xf099;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf09b;</a>
+									</li>
+									<li class="icon-soc-team">
+										<a href="#">&#xf0d5;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+				</div>                 
+                                                
+                                             
+		</div>
+	</section>
+
+	<section class="section white-background padding-bottom hidden-sec">
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="section-header-text-left">
+					<h4> Services<span>.</span></h4> 
+					<p>Pluridisciplinaires et polyvalentes, Carre offre une vaste gamme de services englobant le branding de marque, La communication institutionnelle et événementielles ainsi que l’habillage environnemental et de la signalétique.</p> 
+					<div class="line-header"></div>
+				</div>
+			</div>	
+			<div class="four columns">
+				<div class="services-box">
+					<h6><span>&#xf109;</span> Marque</h6>
+					<p>Analyse, stratégie, positionnement, développement et élaboration d’identité visuelle et verbale :
+                                           Chatre graphique, logotype, slogan…
+                                        </p> 
+				</div>	
+			</div>	
+                       
+                    <div class="four columns">
+				<div class="services-box">
+					<h6><span>&#xf0a1;</span>Communication</h6>
+					<p>Etablissement de stratégies de communication publicitaires et marketing, campagnes institutionnelles, promotionnelles et publicitaires</p> 
+				</div>	
+			</div>
+                    
+                    <div class="four columns">
+				<div class="services-box">
+					<h6><span>&#xf08e;</span> Conception graphique</h6>
+					<p>Conception été réalisation de papeteries, plaquettes, brochures, flyers, affiches, invitations, Webdesign, UX/UI design ….</p> 
+				</div>	
+			</div>	
+                    
+                    <div class="clear"></div>	
+			<div class="four columns">
+				<div class="services-box">
+					<h6><span>&#xf008;</span>Evènements et environnement  </h6>
+					<p>Elaboration de systèmes signalétiques, Conception d’habillage et supports graphiques intérieurs et extérieurs : PLV, Banner. Création d’espaces et de surface d’exposition : STAND.
+Packaging et communication par l’objet : sac, emballage…
+Cadeaux d’entreprises.
+</p> 
+				</div>	
+			</div>
+                    
+                    <div class="four columns">
+				<div class="services-box">
+					<h6><span>&#xf121;</span> Multimédia</h6>
+					<p>TV, Radio, Affichage statique et dynamique, Presse, Web, Community Management, Motion design, Intégration web/de front end and, Explainers .</p>
+				</div>	
+			</div>
+                    
+			
+		</div>
+	</section>
+	
+	<footer class="footer no-shadow">
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="footer-social">
+                                        <a href="#">facebook</a>
+					<a href="#">twitter</a>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="footer-copy-text">
+					<p>© CARRé communication 2017</p>
+					<p>Made by CARRé</p>
+				</div>
+			</div>
+		</div>
+	</footer> 	  
+    
+    
+    
+    
+    
+{%endblock  %}

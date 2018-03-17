@@ -1,0 +1,111 @@
+{% extends '::base.html.twig'%}
+
+{% block body %}
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">  
+        
+    </head> 
+
+   
+        
+            
+             
+ <div class="container">
+  <div class="row">   
+ <div class="animsition">           
+     <div>     
+        {% for article in articles %}
+        <article><br>
+            <br>
+<dl class="dl-vertical" >
+    
+    <br>
+    
+    <p class="text-left"><span>Ecrit par </span><mark>{{article.nom}}</mark>  </p>  
+           
+         
+           <dt><p class="text-left"><strong>{{ article.titre|upper }}</strong></p><br></dt>
+           
+           <p class="text-justify"><img src="{{asset('uploads/'~article.path)}}" alt=""><br></p>
+            <br>
+           
+            
+            <dd><p class="text-justify"><font face="verdana" width="90px" height="50px">{{ article.description }}</font></p> </dd>
+            
+       
+</dl>       
+           
+            
+        </article>
+            
+    
+            
+            
+            
+            
+        {% endfor %}
+     </div>
+     
+    
+    
+</div>
+  </div>
+ </div>     
+</div>   
+ 
+<div class="navigation">
+    {{ knp_pagination_render(articles) }}
+</div> 
+  
+
+   <footer class="footer">
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="footer-social">
+                                        <a href="#">facebook</a>
+					<a href="#">twitter</a>
+					
+					
+				</div>
+			</div>
+		</div>
+       
+      
+       
+       
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="footer-copy-text">
+					<p>© CARRé communication 2017</p>
+					<p>Made by CARRé</p>
+				</div>
+			</div>
+		</div>
+	</footer> 	
+    
+    
+    
+    
+ {%endblock  %} 
+            
+              
+           
+ 
+            
+            
+        
+        
+        
+        
+        
+        
+       
+ 
+    
+        
+        
+
+        
+        
+        
