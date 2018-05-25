@@ -6,10 +6,7 @@ gestion_projet:
     resource: "@GestionProjetBundle/Resources/config/routing.yml"
     prefix:   /
 
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
-    
+
 article:
     resource: "@GestionProjetBundle/Resources/config/routing/article.yml"
     prefix:   /article     

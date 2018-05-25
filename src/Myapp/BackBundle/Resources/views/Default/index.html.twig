@@ -1,1 +1,188 @@
-Hello World!
+{% extends '::base.html.twig'%}
+
+{% block body %}
+    
+
+<section class="cd-section">
+		<div class="cd-block">
+			<div class="home-top-video">
+			
+				<div class="poster_background_home"></div>
+				<video id="video_background_home" preload="auto" autoplay loop="loop" poster="images/trans.png"> 
+					<source src="{{asset('templates/videos/video-home.webm')}}" type="video/webm"> 
+					<source src="{{asset('templates/videos/video-home.mp4')}}" type="video/mp4"> 
+					<source src="{{asset('templates/videos/video-home.ogg')}}" type="video/ogg"> 
+				</video>	
+		
+			       
+				
+				<div class="social-top">
+					<ul class="list-social">
+						<li class="icon-soc tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="#">&#xf099;</a>
+						</li>
+						<li class="icon-soc tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="#">&#xf09a;</a>
+						</li>
+						<li class="icon-soc tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="#">&#xf09b;</a>
+						</li>
+						<li class="icon-soc tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
+							<a href="#">&#xf0d5;</a>
+						</li>
+					</ul>	
+				</div>		
+				
+				<a href="#scroll-link" class="scroll scroll-down"></a>
+				
+			</div>
+		</div>
+	</section> <!-- .cd-section -->
+
+	<section class="cd-section" id="scroll-link">
+		<div class="cd-block">
+			<div class="cd-half-block"></div>
+
+			<div class="cd-half-block">
+				<div class="block-text">
+					<h2>Think Out Of The Box<span>.</span></h2>
+                                        
+					<p>Carre communication est une agence relativement jeune néanmoins riche par l’expérience de son équipe.
+                                         Ayant fait leurs preuves dans les plus grandes agences de la place, avec une solide expérience de 6 ans dans le monde de la communication multisectorielle (Assurances, industrie, agroalimentaires, tourisme, santé, média…)
+                                         Carre communication est une agence de publicité et de communication globale fondée par Maher ghanmi en l’an 2010 et qui compte aujourd’hui 6 collaborateurs spécialisés dans les stratégies de communication, le graphisme, le web design, le développement de sites internet et les campagnes Publicitaires online et offline.
+                                         </p>
+					<a href="{{path('about')}}" class="btn animsition-link">find out more</a>
+				</div>
+			</div>
+		</div>
+	</section> <!-- .cd-section -->
+
+	<section class="cd-section">
+		<div class="cd-block">
+			<div class="cd-half-block"></div>
+
+			<div class="cd-half-block">
+				<div class="block-text">
+					<h2>Portfolio<span>.</span></h2>
+					<p>We are relentless in moving boundaries and carry out this spirited attitude into digital solutions. Digital solutions that engage, inspire and make you think. Make you curious.</p>
+					<a href="{{path('portfolio')}}" class="btn animsition-link">discover</a>
+				</div>
+			</div>
+		</div>
+	</section> <!-- .cd-section -->
+
+	<section class="cd-section">
+		<div class="cd-block">
+			<div class="cd-half-block"></div>
+
+			<div class="cd-half-block">
+				<div class="block-text">
+					<h2>Communication Globale<span>.</span></h2>
+					<p>Une stratégie de communication nécessite avant tout de la réflexion et de l’écoute afin de bien cerner les besoins de la cible.
+                                        Définir une stratégie de communication 360° permet, également, de structurer et coordonner les différentes actions ou supports qui seront mis en œuvre et d’avoir, en amont, une vision globale de l’ensemble des actions déployées.
+                                        </p>
+					<a href="{{path('blog')}}" class="btn animsition-link">read articles</a>
+				</div>
+			</div>
+		</div>
+	</section> <!-- .cd-section -->
+
+	<section class="cd-section">
+		<div class="cd-block">
+			<div class="cd-half-block"></div>
+
+			<div class="cd-half-block">
+				<div class="block-text">
+					<h2>Contact<span>.</span></h2>
+                                        <p>Carre Communication </br>
+                                        11 Avenue de la république imm ben guirat 
+                                        2 eme étage app n 10 ben Arous 2013-Tunisie</br>
+                                        Mobile: +216 71 38 68 56 / +216 54 00 00 46</br>
+                                        Mail : contact@carre.com.tn
+                                          </p>
+					<a href="{{path('myapplication_contact')}}" class="btn animsition-link">get in touch</a>
+				</div>
+			</div>
+		</div>
+	</section> <!-- .cd-section -->
+	<nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive"></a></li>
+			<li><a href="#0" class="cd-next inactive1"></a></li>
+		</ul>
+	</nav> <!-- .cd-vertical-nav -->
+	
+	
+                  
+      
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	<footer class="footer">
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="footer-social">
+                                        <a href="#">facebook</a>
+					<a href="#">twitter</a>
+					
+					
+				</div>
+			</div>
+		</div>
+            
+      
+            
+ <h1>ILS NOUS FONT CONFIANCE </h1>
+<div align="center">
+   
+  <div class="contener_slideshow">
+     <div class="contener_slide">
+      <div class="slid_1"><img src="{{asset('templates/images/logos/amena1.png')}}" alt=""></div>
+      <div class="slid_2"><img src="{{asset('templates/images/logos/ftusa2.png')}}" alt="" ></div>
+      <div class="slid_2"><img src="{{asset('templates/images/logos/banqueamen3.png')}}"></div>
+      <div class="slid_2"><img src="{{asset('templates/images/logos/4.png')}}"></div>
+      <div class="slid_2"><img src="{{asset('templates/images/logos/5.png')}}"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="footer-copy-text">
+					<p>© CARRé communication 2017</p>
+					<p>Made by CARRé</p>
+				</div>
+			</div>
+		</div>
+	</footer> 	
+
+
+{%endblock  %}
+
+
+    
+    
+    
+
